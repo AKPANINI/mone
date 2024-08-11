@@ -259,7 +259,7 @@
               What I <span class="text-gradient">Do</span>
             </h1>
             <div id="download-cv">
-              <a class="button button-sm button-dot me-2 me-lg-3" href="#contact">
+              <a class="button button-sm button-dot me-2 me-lg-3" href="assets/images/WEB RESUME 1.pdf">
                 <span data-text="Download CV">Download CV</span>
               </a>
             </div>
@@ -312,7 +312,7 @@
                   </div>
                   <div class="service-text">
                     <p>
-                      Trabslate your ideal into usable products that solve user and business needs.
+                      Translate your ideal into a well crafted and usable products that solve user and business needs.
                     </p>
                   </div>
                 </div>
@@ -541,7 +541,8 @@
                     <span class="sm-heading text-white">Jimjel Daniel Ishaku "Client"</span>
                   </div>
                   <p class="fs-4 fw-normal fst-italic line-height-140">
-                    Great job, with beautiful,modern and sleek final results. My brand design captures the essence of my
+                    Great service, with beautiful,modern and sleek final results. My brand design captures the essence
+                    of my
                     brand !.
                   </p>
                 </div>
@@ -614,7 +615,7 @@
               </div><!-- end row(inner) -->
               <!-- Contact Form -->
               <div class="contact-form mt-4 mt-lg-5 text-xl-end">
-                <form action="https://formsubmit.co/el/obongini3@gmail.com" method="post" id="contactform">
+                <form onsubmit="sendEmail();reset(); return false;" method="post" id="contactform">
                   <div class="row gx-3 gy-0">
                     <div class="col-12 col-md-6">
                       <input type="text" id="name" name="name" placeholder="Name" required>
@@ -666,6 +667,25 @@
   <script src="assets/plugins/jquery.min.js"></script>
   <script src="assets/plugins/plugins.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "richboysbusiness1,
+        Password: "#Businessmind1",
+        To: 'obongini3@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Enquiry",
+        Body: "Name: " + document.getElementById("name").value
+              <br> "Email: " + document.getElementById("emeil").value
+              <br> "Phone no: " + document.getElementById("phone no.").value
+              <br> "Message: " + document.getElementById("message").value
+      }).then(
+        message => alert("message sent successfully")
+      );
+    }
+  </script>
 </body>
 
 </html>
