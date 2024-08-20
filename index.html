@@ -7,6 +7,9 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <title>IniTom</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
   <!-- Favicon -->
   <link href="assets/images/favicon.png" rel="shortcut icon" />
   <!-- CSS -->
@@ -29,10 +32,49 @@
       });
     })();
   </script>
-  <script src="script.js">
-    
+  <style>
+    #contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+.contact-info-upper-container {
+  display:inline-flex;
+  justify-content: right;
+  border-radius: 2rem;
+  border: rgb(255, 255, 255) 0.5rem solid;
+  /* border-color: white; */
+  background: (250, 250, 250);
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
 
-  </script>
+.contact-info-container {
+  display: flex;
+  /* border-color: white; */
+  align-items: right;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+  </style>
 
 </head>
 
@@ -93,7 +135,6 @@
     <div class="paidout-link">
       <a href="https://wa.me/+2347066155554" target="_blank">WhatsApp!<i class="aria-hidden=" true"></i></a>
     </div>
-    <link rel="stylesheet" href="">
     <!-- Hero section -->
     <div id="about" class="hero-section">
       <div class="container text-center">
@@ -341,64 +382,7 @@
     </div>
     <!-- end Services section -->
 
-    <!-- Clients section -->
-    <!-- <div class="section pt-0">
-      <div class="container">
-        <div class="swiper clients-slider">
-          <div class="swiper-wrapper"> -->
-    <!-- Slider Item 1 -->
-    <!-- <div class="swiper-slide">
-              <div class="client-box">
-                <a href="#">
-                  <img src="assets/images/client-logo.jpg" alt="" />
-                </a>
-              </div>
-            </div> -->
-    <!-- Slider Item 2 -->
-    <!-- <div class="swiper-slide">
-              <div class="client-box">
-                <a href="#">
-                  <img src="assets/images/client-logo.jpg" alt="" />
-                </a>
-              </div>
-            </div> -->
-    <!-- Slider Item 3 -->
-    <div class="swiper-slide">
-      <!-- <div class="client-box">
-                <a href="#">
-                  <img src="assets/images/client-logo.jpg" alt="" />
-                </a>
-              </div>
-            </div> -->
-      <!-- Slider Item 4 -->
-      <!-- <div class="swiper-slide">
-              <div class="client-box">
-                <a href="#">
-                  <img src="assets/images/client-logo.jpg" alt="" />
-                </a>
-              </div>
-            </div> -->
-      <!-- Slider Item 5 -->
-      <!-- <div class="swiper-slide">
-              <div class="client-box">
-                <a href="#">
-                  <img src="assets/images/client-logo.jpg" alt="" />
-                </a>
-              </div>
-            </div> -->
-      <!-- Slider Item 6 -->
-      <!-- <div class="swiper-slide">
-              <div class="client-box">
-                <a href="#">
-                  <img src="assets/images/client-logo.jpg" alt="" />
-                </a>
-              </div>
-            </div> -->
-      <!-- end Slider Item 6 -->
-    </div>
-    <!-- end swiper-wrapper -->
-    </div>
-    <!-- end clients-slider -->
+
     </div>
     <!-- end container -->
     </div>
@@ -416,7 +400,8 @@
               </h1>
               <p>
                 I'm committed to delivering exceptional value by building strong client partnerships and crafting
-                user-centric platforms that not only meets but exceed expectations, checkout my works !.
+                user-centric platforms with experiences that not only meets but exceed expectations, checkout my works
+                !.
               </p>
               <!-- Slider Nav -->
               <div class="mt-4">
@@ -509,7 +494,7 @@
                     <ul class="list-inline-dot sm-heading text-white mb-2">
                       <li>
                         <a class="link-hover" href="#">
-                          <span data-text="UI/UX Design">Category</span>
+                          <span data-text="UI/UX">Category</span>
                         </a>
                       </li>
 
@@ -519,7 +504,7 @@
                     <h2>
                       <a class="portfolio-caption" href="#">
                         <i class="bi bi-arrow-right"></i>
-                        Dog Breeding website
+                        Dog Grooming/Breeding site.
                       </a>
                     </h2>
                   </div>
@@ -561,46 +546,9 @@
                 </div>
               </div>
             </div>
-            <!-- Slider item 2 -->
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-box">
-                <div class="testimonial-avatar">
-                  <img src="assets/images/testimonial-avatar.jpg" alt="" />
-                </div>
-                <div class="testimonial-content">
-                  <div class="mb-3">
-                    <h3>Alexander Warren</h3>
-                    <span class="sm-heading text-white">CTO - Company</span>
-                  </div>
-                  <p class="fs-4 fw-normal fst-italic line-height-140">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                  </p>
-                </div>
-              </div>
-            </div> -->
-            <!-- Slider item 3 -->
-            <!-- <div class="swiper-slide"> -->
-            <!-- <div class="testimonial-box">
-                <div class="testimonial-avatar">
-                  <img src="assets/images/testimonial-avatar.jpg" alt="" />
-                </div>
-                <div class="testimonial-content">
-                  <div class="mb-3">
-                    <h3>Alexander Warren</h3>
-                    <span class="sm-heading text-white">CTO - Company</span>
-                  </div>
-                  <p class="fs-4 fw-normal fst-italic line-height-140">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-            <!-- Slider Pagination Progress -->
-            <div class="swiper-testimonial-pagination"></div>
-            <!-- end Slider Pagination Progress -->
+
+
+
           </div>
         </div>
         <!-- end container -->
@@ -616,48 +564,39 @@
               <h1 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span></h1>
             </div>
             <div class="col-12 col-xl-8">
-              <div class="row g-4 g-lg-5">
-                <div class="col-12 col-md-6">
-                  <h6 class="sm-heading">Email:</h6>
-                  <h3 class="mb-0">obongini3@gmail.com</h3>
-                </div>
-                <div class="col-12 col-md-6">
-                  <h6 class="sm-heading">Call:</h6>
-                  <h3 class="mb-0">+234 7066155554</h3>
-                </div>
-              </div><!-- end row(inner) -->
+
               <!-- Contact Form -->
               <div class="contact-form mt-4 mt-lg-5 text-xl-end">
-                <form method="post" id="contactform">
-                  <div class="row gx-3 gy-0">
-                    <div class="col-12 col-md-6">
-                      <input type="text" id="name" name="name" placeholder="Name" required>
+                <div class="contact-info-upper">
+                  <section id="contact">
+              
+                    <h1 class="title"> Click <span class="text-gradient">link.</span></h1>
+                    <div class="contact-info-upper-container">
+                      <div class="contact-info-container">
+                        <img
+                          src="./assets/images/mage--email-fill.svg""
+                          alt="Email icon"
+                          class="icon contact-icon email-icon"
+                        />
+                        <p><a href="mailto:obongini3@gmail.com">obongini3@gmail.com</a></p>
+                      </div>
+                      <div class="contact-info-container">
+                        <img
+                          src="./assets/images/mingcute--linkedin-line.svg"
+                          alt="LinkedIn icon"
+                          class="icon contact-icon"
+                        />
+                        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                      </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                      <input type="email" id="email" name="email" placeholder="E-Mail" required>
-                    </div>
-                  </div>
-                  <input type="text" id="subject" onclick="SendMail()" name="subject" placeholder="Subject" required>
-                  <textarea name="message" id="message" placeholder="Message"></textarea>
-                  <button class="button button-dot" type="submit">
-                    <span data-text="Send Message">Send Message</span>
-                  </button>
-                </form>
-                <!-- Submit result -->
-                <div class="submit-result">
-                  <span id="success">Thank you! Your Message has been sent.</span>
-                  <span id="error">Something went wrong, Please try again!</span>
-                </div>
-              </div><!-- end contact-form -->
-            </div>
-          </div><!-- end row -->
-          <!-- Google Maps -->
-          <!-- <div id="map1" class="gmap gmap-md border-radius-1 mt-5" data-latitude="51.513569" data-longitude="-0.123443">
-        </div> -->
-          <!-- end Google Maps -->
-        </div><!-- end container -->
-      </div>
-      <!-- end Contact section -->
+
+
+                </div><!-- end contact-form -->
+              </div>
+            </div><!-- end row -->
+          </div><!-- end container -->
+        </div>
+        <!-- end Contact section -->
   </main>
 
   <!-- Footer -->
@@ -680,7 +619,6 @@
   <script src="assets/plugins/jquery.min.js"></script>
   <script src="assets/plugins/plugins.js"></script>
   <script src="assets/js/functions.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
 
   </script>
